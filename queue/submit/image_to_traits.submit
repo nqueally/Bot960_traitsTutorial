@@ -1,0 +1,25 @@
+## submit file for image_to_traits
+## fake out version
+
+#######################################################
+########  general configuration
+universe = vanilla
+
+## Fast matching for the class (only use for jobs requiring minimal resources)
++BOT960 = true
+
+## Resources to allocate for the job
+request_cpus   = 1
+request_disk   = 1G
+request_memory = 1G 
+######################################################
+executable = bin/image_to_traits_modify_hybeta4.sh
+
+transfer_input_files = http://proxy.chtc.wisc.edu/SQUID/sgoldstein/tutorial.tar.gz
+
+output = queue/out/image_to_traits.$(CLUSTER).$(PROCESS).out
+error  = queue/err/image_to_traits.$(CLUSTER).$(PROCESS).err
+log    = queue/log/image_to_traits.$(CLUSTER).log
+
+queue 
+

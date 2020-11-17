@@ -1,0 +1,24 @@
+## submit file for gdal_merge:
+## fake out version
+
+#######################################################
+########  general configuration
+universe = vanilla
+
+## Fast matching for the class (only use for jobs requiring minimal resources)
++BOT960 = true
+
+## Resources to allocate for the job
+request_cpus   = 1
+request_disk   = 1G
+request_memory = 1G 
+######################################################
+executable = bin/gdal_merge.sh
+
+transfer_input_files = http://proxy.chtc.wisc.edu/SQUID/sgoldstein/tutorial.tar.gz
+
+output = queue/out/gdal_merge.$(CLUSTER).$(PROCESS).out
+error  = queue/err/gdal_merge.$(CLUSTER).$(PROCESS).err
+log    = queue/log/gdal_merge.$(CLUSTER).log
+
+queue 
