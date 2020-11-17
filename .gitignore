@@ -1,0 +1,7 @@
+# ignore log files from DAGMan
+*submit.dag.*
+
+*~
+
+## condor error,log and out files
+queue/???/*
