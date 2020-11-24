@@ -13,7 +13,11 @@ mkdir $ENVDIR
 tar -xzf $ENVNAME.tar.gz -C $ENVDIR
 . $ENVDIR/bin/activate
 
+##  get command line params
+outputdir=$1
+
 # modify this line to run your desired Python script and any other work you need to do
 # import gdal as a check on the python environment;
-python -c 'from osgeo import gdal; print("Hello, World!"); print("faking topo_brdf")'
+#python -c 'from osgeo import gdal; print("Hello, World!"); print("faking topo_brdf")'
+python3 topo_brdf_coeffs_modify_hybeta3.py  --od $outputdir ...
 
