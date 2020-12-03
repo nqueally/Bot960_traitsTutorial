@@ -14,8 +14,9 @@ request_disk   = 1G
 request_memory = 1G 
 ######################################################
 executable = bin/gdal_merge.sh
+args = $(outputdir) $(filetype) $(nodata) $(filelist)
 
-transfer_input_files = http://proxy.chtc.wisc.edu/SQUID/sgoldstein/tutorial.tar.gz
+transfer_input_files = http://proxy.chtc.wisc.edu/SQUID/sgoldstein/tutorial.tar.gz, bin/gdal_merge.py
 
 output = queue/out/gdal_merge.$(CLUSTER).$(PROCESS).out
 error  = queue/err/gdal_merge.$(CLUSTER).$(PROCESS).err
