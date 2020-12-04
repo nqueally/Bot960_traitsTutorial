@@ -12,18 +12,19 @@ VARS TOPO_BRDF_COEFFS basedir="/staging/sgoldstein/Bot960_traitsTutorial/tiny_ex
 		      pref="f170607r07" \
 		      kernel="sparse thick" \
 		      mask_t="0.3 0.7"
-# VARS IMAGE_TO_TRAITS  imgdir="for_bot/f170607r07_sub_rfl" \obsdir="for_bot/f170607r07_sub_obs_ort" \
-# 					  outputdir="for_bot/results" \
-# 					  topo_coeff="for_bot/results/f170607r07_topo_coeffs.json" \
-# 					  brdf_coeff="for_bot/results/f170607r07" \
-# 					  mask_t="0.3 0.7" \
-# 					  outname="_3bin_single_topo_brdf" \
-# 					  trait_coeff="for_bot/testmods"
+VARS IMAGE_TO_TRAITS  imgdir="for_bot/f170607r07_sub_rfl" \
+		      obsdir="for_bot/f170607r07_sub_obs_ort" \
+		      outputdir="for_bot/results" \
+		      topo_coeff="for_bot/results/f170607r07_topo_coeffs.json" \
+		      brdf_coeff="for_bot/results/f170607r07" \
+		      mask_t="0.3 0.7" \
+		      outname="_3bin_single_topo_brdf" \
+		      trait_coeff="for_bot/testmods"
 # VARS GDAL_MERGE outputdir="for_bot/results" \
 # 				filetype="GTiff" \
 # 				nodata="-9999" \
 # 				filelist="f170607r07_sub_rfl_PLSR_500_raw_coef_Carbon_400_2400.tif f170607r07_sub_rfl_PLSR_500_raw_coef_LMA_400_2400.tif f170607r07_sub_rfl_PLSR_500_raw_coef_Nitrogen_400_2400"
 
 ## dependencies
-#PARENT TOPO_BRDF_COEFFS CHILD IMAGE_TO_TRAITS
+PARENT TOPO_BRDF_COEFFS CHILD IMAGE_TO_TRAITS
 #PARENT IMAGE_TO_TRAITS CHILD GDAL_MERGE 
