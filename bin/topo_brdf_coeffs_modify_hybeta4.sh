@@ -21,6 +21,7 @@ outputdir=$3
 pref=$4
 kernel=$5
 mask_t=$6
+basedir=$7
 
 
 cp $basedir/$img* .
