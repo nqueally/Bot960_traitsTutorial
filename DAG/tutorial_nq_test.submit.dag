@@ -8,7 +8,7 @@ JOB TOPO_BRDF_COEFFS queue/submit/topo_brdf_coeffs.submit
 VARS TOPO_BRDF_COEFFS basedir="/staging/sgoldstein/Bot960_traitsTutorial/tiny_ex" \
 		      img="f170607r07_sub_rfl" \
 		      obs="f170607r07_sub_obs_ort" \
-		      outputdir="for_bot/results" \
+		      outputdir="results" \
 		      pref="f170607r07" \
 		      kernel="sparse thick" \
 		      mask_t="0.3 0.7"
