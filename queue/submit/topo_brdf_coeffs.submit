@@ -14,7 +14,7 @@ request_disk   = 1G
 request_memory = 1G 
 ######################################################
 executable = bin/topo_brdf_coeffs_modify_hybeta4.sh
-args = $(imgdir) $(obsdir) $(outputdir) $(pref) $(kernel) $(mask_t)
+args = $(img) $(obs) $(outputdir) $(pref) $(kernel) $(mask_t) $(basedir)
 
 ## On execute node:  topo_brdf_coeffs_modify_hybeta4.sh $(outputdir)
 
