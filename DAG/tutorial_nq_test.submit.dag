@@ -1,9 +1,9 @@
 ##  BRDF correction workflow
 
 ## steps
-JOB TOPO_BRDF_COEFFS queue/submit/topo_brdf_coeffs_nq.submit
-#JOB IMAGE_TO_TRAITS queue/submit/image_to_traits_nq.submit
-#JOB GDAL_MERGE queue/submit/gdal_merge_nq.submit
+JOB TOPO_BRDF_COEFFS queue/submit/topo_brdf_coeffs.submit
+#JOB IMAGE_TO_TRAITS queue/submit/image_to_traits.submit
+#JOB GDAL_MERGE queue/submit/gdal_merge.submit
 
 VARS TOPO_BRDF_COEFFS basedir="/staging/sgoldstein/Bot960_traitsTutorial/tiny_ex"
 					  img="f170607r07_sub_rfl" \
