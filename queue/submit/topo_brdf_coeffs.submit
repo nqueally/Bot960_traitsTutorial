@@ -18,7 +18,7 @@ args = $(img) $(obs) $(outputdir) $(pref) $(kernel) $(mask_t) $(basedir)
 
 ## On execute node:  topo_brdf_coeffs_modify_hybeta4.sh $(outputdir)
 
-transfer_input_files = http://proxy.chtc.wisc.edu/SQUID/sgoldstein/tutorial.tar.gz, bin/topo_brdf_coeffs_modify_hybeta4.py
+transfer_input_files = http://proxy.chtc.wisc.edu/SQUID/sgoldstein/tutorial.tar.gz, bin/topo_brdf_coeffs.py
 
 output = queue/out/topo_brdf_coeffs.$(CLUSTER).$(PROCESS).out
 error  = queue/err/topo_brdf_coeffs.$(CLUSTER).$(PROCESS).err
