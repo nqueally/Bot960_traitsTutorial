@@ -22,6 +22,7 @@ pref=$4
 kernel=$5
 mask_t=$6
 
+
 cp $basedir/$img* .
 cp $basedir/$obs* . 
 
