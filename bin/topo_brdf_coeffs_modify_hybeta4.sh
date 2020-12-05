@@ -38,11 +38,11 @@ echo $kernel2
 echo $mask_t1
 echo $mask_t2
 echo "$basedir"
-echo "$basedir"/$img*
-echo "$basedir"/$obs*
+echo "$basedir"/$img
+echo "$basedir"/$obs
 
 # modify this line to run your desired Python script and any other work you need to do
 # import gdal as a check on the python environment;
 #python -c 'from osgeo import gdal; print("Hello, World!"); print("faking topo_brdf")'
-#python3 topo_brdf_coeffs.py  --img $basedir/$img --obs $basedir/$obs --od $outputdir --pref $pref --kernels $kernel --mask --mask_threshold $mask_t1 $mask_t2 --topo --brdf 
+python3 topo_brdf_coeffs.py  --img $img --obs $obs --od $outputdir --pref $pref --kernels $kernel --mask --mask_threshold $mask_t1 $mask_t2 --topo --brdf 
 
