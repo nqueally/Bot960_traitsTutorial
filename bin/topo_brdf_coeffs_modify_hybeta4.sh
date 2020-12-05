@@ -32,9 +32,9 @@ echo $obs
 echo $outputdir
 echo $pref
 echo $kernel
-echo $basedir
-echo $basedir/$img*
-echo $basedir/$obs*
+echo "$basedir"
+echo "$basedir"/$img*
+echo "$basedir"/$obs*
 
 # modify this line to run your desired Python script and any other work you need to do
 # import gdal as a check on the python environment;
