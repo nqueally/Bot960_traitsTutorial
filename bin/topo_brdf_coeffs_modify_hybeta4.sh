@@ -16,7 +16,7 @@ tar -xzf $ENVNAME.tar.gz -C $ENVDIR
 
 ##  get command line params
 img=$1
-obsdir=$2
+obs=$2
 outputdir=$3
 pref=$4
 kernel=$5
@@ -26,6 +26,15 @@ basedir=$7
 
 cp $basedir/$img* .
 cp $basedir/$obs* . 
+
+echo $img
+echo $obs
+echo $outputdir
+echo $pref
+echo $kernel
+echo $basedir
+echo $basedir/$img*
+echo $basedir/$obs*
 
 # modify this line to run your desired Python script and any other work you need to do
 # import gdal as a check on the python environment;
