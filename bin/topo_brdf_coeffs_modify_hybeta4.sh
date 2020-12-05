@@ -33,7 +33,10 @@ echo $img
 echo $obs
 echo $outputdir
 echo $pref
-echo $kernel
+echo $kernel1
+echo $kernel2
+echo $mask_t1
+echo $mask_t2
 echo "$basedir"
 echo "$basedir"/$img*
 echo "$basedir"/$obs*
