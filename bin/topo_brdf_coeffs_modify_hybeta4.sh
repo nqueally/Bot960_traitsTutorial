@@ -24,8 +24,8 @@ mask_t=$6
 basedir=$7
 
 
-cp $basedir/$img* .
-cp $basedir/$obs* . 
+cp "$basedir/$img"* .
+cp "$basedir/$obs"* . 
 
 echo $img
 echo $obs
