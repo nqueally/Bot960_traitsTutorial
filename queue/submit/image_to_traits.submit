@@ -14,7 +14,7 @@ request_disk   = 1G
 request_memory = 1G 
 ######################################################
 executable = bin/image_to_traits_modify_hybeta4.sh
-args = $(img) $(obs) $(outputdir) $(topo_coeff) $(brdf_coeff) $(mask_t) $(outname) $(trait_coeff)
+args = $(img) $(obs) $(outputdir) $(topo_coeff) $(brdf_coeff) $(mask_t1) $(mask_t2) $(outname) $(trait_coeff)
 
 ## On execute node:  topo_brdf_coeffs_modify_hybeta4.sh $(outputdir)
 
