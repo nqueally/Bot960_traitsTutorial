@@ -19,10 +19,11 @@ img=$1
 obs=$2
 outputdir=$3
 pref=$4
-kernel=$5
-mask_t1=$6
-mask_t2=$7
-basedir=$8
+kernel1=$5
+kernel2=$6
+mask_t1=$7
+mask_t2=$8
+basedir=$9
 
 
 #cp $basedir/$img* .
